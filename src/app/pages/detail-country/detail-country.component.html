@@ -1,0 +1,51 @@
+
+<div class="row headerRow">
+    <h2>{{country.name}}</h2>
+</div>
+<div class="row headerRow">
+    <table>
+        <tr>
+            <td>
+                Capital
+            </td>
+            <td>
+                :&nbsp;{{country.capital}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Area
+            </td>
+            <td>
+                :&nbsp;{{country.area|number:0}} km<sup>2</sup>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Population
+            </td>
+            <td>
+                :&nbsp;{{country.population|number:0}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                GDP
+            </td>
+            <td>
+                :&nbsp;{{country.gdp|number:0}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Currency
+            </td>
+            <td>
+                :&nbsp;{{country.currency}}
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="row headerRow">
+    <button (click)="goBack()">go back</button>
+</div>
